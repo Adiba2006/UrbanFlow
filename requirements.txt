@@ -1,0 +1,8 @@
+
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+SQLAlchemy==2.0.54
+joblib==1.6.0
+requests==2.34.2
+python-dotenv==1.2.4
+scikit-learn==1.7.2
