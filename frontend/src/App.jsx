@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import MapView from "./MapView";
+import MapView from "./Mapview.jsx";
 
 const PLACE_CATEGORIES = {
   Restaurants: ['["amenity"~"restaurant|fast_food|cafe"]'],
@@ -677,7 +677,7 @@ function startGuidance() {
     setData(null);
 
     try {
-      const url = new URL("http://127.0.0.1:8000/route");
+      const url = new URL("https://urbanflow-beckend.onrender.com");
 
       url.searchParams.set("origin", origin);
       url.searchParams.set("destination", destination);
@@ -732,7 +732,7 @@ function startGuidance() {
         <div className="sidebar-bottom">
           <span className="online-dot" />
           Backend connection
-          <small>127.0.0.1:8000</small>
+          <small>https://urbanflow-beckend.onrender.com</small>
         </div>
       </aside>
 
